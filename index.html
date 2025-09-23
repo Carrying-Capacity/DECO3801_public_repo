@@ -1,14 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/DECO3801_public_repo/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/DECO3801_public_repo/assets/index-qD5fZ029.js"></script>
-    <link rel="stylesheet" crossorigin href="/DECO3801_public_repo/assets/index-DR5H419I.css">
+    <title>Dynamic Tree Builder</title>
+    <script type="module" crossorigin src="/DECO3801_public_repo/assets/index-sk54bh7l.js"></script>
+    <link rel="stylesheet" crossorigin href="/DECO3801_public_repo/assets/index-C_3y-d78.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div>
+      <h1>Paste JSON to build tree</h1>
+      <textarea id="json-input" rows="10" cols="80">
+[
+  {
+    "id": "e2b2b3b9985e4",
+    "next_nodes": ["4cdf122a1eee4","746e8c0249234"],
+    "prev_nodes": ["5b83544a0f8a4"],
+    "x_meters": 65.21,
+    "y_meters": 16.67,
+    "type": "house"
+  }
+]
+      </textarea>
+      <button id="build-btn">Build Tree</button>
+    </div>
+    <div id="tree-container"></div>
   </body>
 </html>
