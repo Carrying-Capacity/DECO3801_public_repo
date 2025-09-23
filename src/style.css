@@ -1,26 +1,82 @@
-.calculator {
-  max-width: 200px;
-  margin: 20px auto;
+#tree-container svg {
+  width: 100%;
+  height: 600px;
+}
+
+.node circle {
+  fill: steelblue;
+  stroke: #999;
+  stroke-width: 2px;
+}
+
+.node text {
+  font: 12px sans-serif;
+  fill: #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2px;
+}
+
+body {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;   /* vertical positioning */
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  
+  /* background image */
+  background-image: url('/woman.png');  /* replace with your image path */
+  background-size: cover;      /* make image cover entire body */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+}
+
+div {
+  margin: 20px;
   text-align: center;
 }
 
-#display {
+textarea {
+  display: block;
+  margin: 10px auto;
+}
+
+#tree-canvas {
+  width: 800px;        /* fixed width */
+  height: 600px;       /* fixed height */
+  border: 2px solid #fff;  /* optional border for canvas */
+  margin: 20px auto;
+  overflow: hidden;    /* prevents content overflow */
+  background-color: rgba(255,255,255,0.1); /* optional background */
+}
+
+#tree-svg {
   width: 100%;
-  height: 40px;
-  font-size: 1.2em;
-  text-align: right;
-  margin-bottom: 10px;
-  padding: 5px;
+  height: 100%;
+  display: block;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+#main-container {
+  border: 3px solid #381290;       /* custom border color and thickness */
+  border-radius: 12px;             /* rounded corners */
+  padding: 20px;                   /* space inside the box */
+  background: linear-gradient(135deg, #ffffff, #ff75ff); /* custom gradient */
+  max-width: 900px;                /* optional width */
+  width: 90%;                       /* responsive width */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* subtle shadow */
+  text-align: center;               /* center text inside */
 }
 
-.btn {
-  padding: 10px;
-  font-size: 1em;
-  cursor: pointer;
+#tree-container {
+  background-color: white;  /* sets white background */
+  border: 3px solid #ccc;   /* optional: adds a light border */
+  border-radius: 12px;             /* rounded corners */
+  width: 800px;             /* match your SVG width */
+  height: 600px;            /* match your SVG height */
+  margin-top: 20px;         /* optional spacing above */
+  display: flex;            /* optional: to center SVG if needed */
 }
