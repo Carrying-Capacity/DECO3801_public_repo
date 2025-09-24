@@ -2,27 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dynamic Tree Builder</title>
-    <script type="module" crossorigin src="/DECO3801_public_repo/assets/index-sk54bh7l.js"></script>
-    <link rel="stylesheet" crossorigin href="/DECO3801_public_repo/assets/index-C_3y-d78.css">
+    <title>Carrying Capacity's Website</title>
+    <link rel="icon" href="/DECO3801_public_repo/favicon-32x32.png" sizes="32x32" type="image/png">
+    <script type="module" crossorigin src="/DECO3801_public_repo/assets/index-DGOKYmkk.js"></script>
+    <link rel="stylesheet" crossorigin href="/DECO3801_public_repo/assets/index-DVjfy4NG.css">
   </head>
   <body>
-    <div>
-      <h1>Paste JSON to build tree</h1>
-      <textarea id="json-input" rows="10" cols="80">
-[
-  {
-    "id": "e2b2b3b9985e4",
-    "next_nodes": ["4cdf122a1eee4","746e8c0249234"],
-    "prev_nodes": ["5b83544a0f8a4"],
-    "x_meters": 65.21,
-    "y_meters": 16.67,
-    "type": "house"
-  }
-]
-      </textarea>
-      <button id="build-btn">Build Tree</button>
+  <div id="main-container">
+    <h1>Paste Tree JSON to build</h1>
+    <input type="file" id="json-file" accept=".json,.txt">
+    <textarea id="json-input" rows="10" cols="80"></textarea>
+    <button id="build-btn">Build Tree</button>
+    <button id="clear-btn">Clear Tree</button>
+    <div id="tree-container">
+      <svg id="tree-svg" width="800" height="600"></svg>
     </div>
-    <div id="tree-container"></div>
-  </body>
+  </div>
+</body>
 </html>
