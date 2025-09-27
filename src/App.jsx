@@ -1,84 +1,62 @@
 import React, { useEffect, useState } from "react";
-import { MapContainer, Marker, Popup } from "react-leaflet";
-import { TileLayer } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import "./App.css";
-import { ImageOverlay } from "react-leaflet";
-import L from "leaflet";
+import CreateMap from "./CreateMap";
 
-import grass from "/simplegrass.jpg";
-import treeIconImg from "/tree.jpeg";
-
-const treeIcon = L.icon({
-  iconUrl: treeIconImg,
-  iconSize: [40, 40], // size in pixels
-  iconAnchor: [20, 40] // anchor point
-});
-
-export default function App() {
+function App() {
   const [trees, setTrees] = useState([]);
+  const [selectedFile, setSelectedFile] = useState("graph.json");
+  const jsonFiles = [
+    "graph.json",
+    "graph2.json",
+    "graph3.json"
+  ];
+
   useEffect(() => {
-  fetch("map_data/graph.json")
+  fetch(`map_data/${selectedFile}`)
     .then(res => res.text()) // read as text first
     .then(text => {
       console.log("Raw JSON text:", text);
       return JSON.parse(text); // parse manually
     })
-    .then(data => {
-      const coords = data.map(node => ({
-        id: node.id,
-        x: node.x_meters,
-        y: node.y_meters
-      }));
-      setTrees(coords);
-    })
+    .then(data => {setTrees(data)})
     .catch(err => console.error("Failed to load graph.json", err));
-  }, []);
+  }, [selectedFile]);
 
   return (
     <div className="app-background">
       <div className="central-strip">
-        <h2>Map of Transformer</h2>
-        <div className = 'map-wrapper'>
-          <MapContainer
-            center={[0, 0]} // coordinates of the center
-            zoom={10}
-            crs={L.CRS.Simple}
-            className="map-container"
+        <h2>Map of Transformer XX</h2>
+        <div className="simple-text">
+          <p>
+          Below is a map representation of the transformer file in graph.json.
+          For now, it is a file called 'graph.json' in the map_data folder, but later I'll fix this
+          </p>
+          <p>
+            Select a file (transformer) to load to view the nodes:
+          </p>
+          <select
+            value={selectedFile}
+            onChange={(e) => setSelectedFile(e.target.value)}
           >
-            {/* <ImageOverlay
-              url={grass}
-              bounds={[[-1,-1],[1,1]]}
-            /> */}
-            <TileLayer
-              url={grass}            // your image file
-              tileSize={256}         // size of each tile
-              noWrap={false}         // allow repeating
-              continuousWorld={true} // repeat infinitely
-            />
-
-            <Marker position={[0,0]}>
-              <Popup>Hello from Leaflet!</Popup>
-            </Marker>
-            {trees.map((tree) => (
-              <Marker
-                key={tree.id}
-                position={[tree.y, tree.x]} // Leaflet expects [lat, lng]
-                icon={treeIcon}
-              >
-                <Popup>Transformer ID: {tree.id}</Popup>
-              </Marker>
+            {jsonFiles.map((file) => (
+              <option key={file} value={file}>
+                {file}
+              </option>
             ))}
-          </MapContainer>
-          <div
-            className="sidebar"
-          ><h3>Info Goes Here.</h3></div>
+          </select>
+        </div>
+        <CreateMap trees={trees} />
+        <div className="simple-text">
+          <p>
+          Do some yapping about how the transformer function works by using Chow Liu and brunton spaghetti code
+          How does the algorithm actually work, do some explanation on how things are
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
+export default App;
 
 // {/* Perhaps it's actually possible to make a MST using pure leaflet. */}
 // {/* I'll attempt this today */}
