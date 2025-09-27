@@ -25,7 +25,7 @@
         "HouseID": 661,
         "voltage_data": [],
         "predicted_phase": null,
-        "solar": true
+        "solar": false
     },
     {
         "id": "056ac30807ac4",
