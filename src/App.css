@@ -125,16 +125,16 @@
   /* overflow-y: auto; */
 }
 
-.house-label-icon {
+.item-label-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.house-label-icon span {
+.item-label-icon span {
   pointer-events: none; /* so clicking goes to marker */
 }
 
-.house-label-icon .house-label {
+.item-label-icon .item-label {
   position: absolute;
   bottom: -12px; /* adjust to move the textbox */
   left: 50%;
@@ -147,4 +147,16 @@
   border-radius: 4px;
   pointer-events: none; /* lets clicks go to the marker */
   white-space: nowrap;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.9);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1000;
 }

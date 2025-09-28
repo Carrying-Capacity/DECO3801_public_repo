@@ -12,25 +12,40 @@ import transformerIconImg from "/transformer.jpg";
 
 const HouseIcon = (houseID, isSolar = false, Phase) =>
   L.divIcon({
-    className: "house-label-icon",
+    className: "item-label-icon",
     html: `
       <div style="position: relative; text-align: center;">
         <img src="${isSolar ? solarHouseIconImg : houseIconImg}" width="40" height="40" />
-        <div class="house-label">${houseID} (${Phase})</div>
+        <div class="item-label">${houseID} (${Phase})</div>
       </div>
     `,
     iconSize: [40, 40],
     iconAnchor: [20, 40],
+    popupAnchor: [0, -40]  // move popup upwards
   });
 
-const TransformerIcon = L.icon({
-  iconUrl: transformerIconImg,
-  iconSize: [40, 40], // size in pixels
-  iconAnchor: [20, 40] // anchor point
-});
+const TransformerIcon = () =>
+  L.divIcon({
+    className: "item-label-icon",
+    html: `
+      <div style="position: relative; text-align: center;">
+        <img src="${transformerIconImg}" width="40" height="40" />
+        <div class="item-label">Transformer</div>
+      </div>
+    `,
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]  // move popup upwards
+  });
+
+// const TransformerIcon = L.icon({
+//   iconUrl: transformerIconImg,
+//   iconSize: [40, 40], // size in pixels
+//   iconAnchor: [20, 40] // anchor point
+// });
 
 export default function TransformerMap({trees}) {
-  const [selectedTree, setSelectedTree] = useState(null); // track clicked tree
+  const [selectedItem, setSelectedTree] = useState(null); // track clicked tree
 
   return (
     <div className = 'map-wrapper'>
@@ -58,7 +73,7 @@ export default function TransformerMap({trees}) {
               ? tree.solar 
                 ? HouseIcon(tree.HouseID, true, tree.predicted_phase)
                 :HouseIcon(tree.HouseID, false, tree.predicted_phase)
-              : TransformerIcon}>
+              : TransformerIcon()}>
             {tree.type === "house" ? (
               <Popup>House Number: {tree.HouseID}</Popup>
             ) : (
@@ -87,19 +102,42 @@ export default function TransformerMap({trees}) {
 
       <div className="sidebar">
         <h3>Information</h3>
-        {selectedTree ? (
+        {selectedItem ? (
             <div>
-              <p><b>Type:</b> {selectedTree.type}</p>
-              <p><b>X:</b> {selectedTree.x_meters.toFixed(2)}</p>
-              <p><b>Y:</b> {selectedTree.y_meters.toFixed(2)}</p>
-              {selectedTree.type=='house' ?(
+              <p><b>Type:</b> {selectedItem.type}</p>
+              <p><b>X:</b> {selectedItem.x_meters.toFixed(2)}</p>
+              <p><b>Y:</b> {selectedItem.y_meters.toFixed(2)}</p>
+              {selectedItem.type=='house' ?(
                 <>
-                  <p><b>HouseID:</b> {selectedTree.HouseID}</p>
-                  <p><b>Generates Solar Power:</b> {selectedTree.solar ? "Yes" : "No"}</p>
-                  <p><b>Predicted Phase:</b> {selectedTree.predicted_phase || "Unknown"}</p>
-                </>
-              ):(<></>)}
-              <p><b>ID:</b> {selectedTree.id}</p>
+                  <p><b>HouseID:</b> {selectedItem.HouseID}</p>
+                  <p><b>Generates Solar Power:</b> {selectedItem.solar ? "Yes" : "No"}</p>
+                  <p><b>Predicted Phase:</b> {selectedItem.predicted_phase || "Unknown"}</p>
+                  {/* Parent */}
+                  <p><b>Parent: </b> 
+                    {selectedItem.prev_nodes.length > 0
+                      ? selectedItem.prev_nodes.map(pid => {
+                          const parentNode = trees.find(t => t.id === pid);
+                          if (!parentNode) return "Unknown";
+                          return parentNode.type === "house"
+                            ? `House ${parentNode.HouseID}`
+                            : `Transformer ${parentNode.id}`;
+                        }).join(", ")
+                      : "None"}
+                  </p>
+                </>):(<></>)}
+                {/* Children */}
+                  <p><b>Children: </b> 
+                    {selectedItem.next_nodes.length > 0
+                      ? selectedItem.next_nodes.map(cid => {
+                          const childNode = trees.find(t => t.id === cid);
+                          if (!childNode) return "Unknown";
+                          return childNode.type === "house"
+                            ? `House ${childNode.HouseID}`
+                            : `Transformer ${childNode.id}`;
+                        }).join(", ")
+                      : "None"}
+                  </p>
+              <p><b>ID:</b> {selectedItem.id}</p>
             </div>
           ) : (
             <p>Click on an object to see details.</p>
