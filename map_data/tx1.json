@@ -1,43 +1,44 @@
 [
     {
-        "id": "fc1c3a33716e4",
+        "id": "7fc0095ab17e4",
         "next_nodes": [
-            "16c34fca78864"
+            "d7326d4a4f794",
+            "593426d7fb754"
         ],
         "prev_nodes": [],
         "next_node_distances_m": {},
-        "x_meters": 0.0,
+        "x_meters": -0.0,
         "y_meters": 0.0,
         "type": "Transformer"
     },
     {
-        "id": "16c34fca78864",
+        "id": "d7326d4a4f794",
         "next_nodes": [
-            "125ec2eb18ee4"
+            "689ccb8cf7024"
         ],
         "prev_nodes": [
-            "fc1c3a33716e4"
+            "7fc0095ab17e4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.3271803433300473,
-        "y_meters": 1.5343398848770615,
+        "x_meters": 6.123233995736766e-17,
+        "y_meters": 1.0,
         "type": "house",
         "HouseID": 1,
         "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "125ec2eb18ee4",
+        "id": "689ccb8cf7024",
         "next_nodes": [
-            "17e4e63ab2514"
+            "ab37f949347a4"
         ],
         "prev_nodes": [
-            "16c34fca78864"
+            "d7326d4a4f794"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.6207500159723698,
-        "y_meters": 4.99045088726124,
+        "x_meters": 1.2246467991473532e-16,
+        "y_meters": 2.0,
         "type": "house",
         "HouseID": 2,
         "voltage_data": [],
@@ -45,103 +46,119 @@
         "solar": true
     },
     {
-        "id": "17e4e63ab2514",
+        "id": "ab37f949347a4",
         "next_nodes": [
-            "7ce374cc04814",
-            "385dc32a000f4"
+            "e5e57b40c5204",
+            "bc741e398c144"
         ],
         "prev_nodes": [
-            "125ec2eb18ee4"
+            "689ccb8cf7024"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.9169345884944464,
-        "y_meters": -3.0066001275827183,
+        "x_meters": 1.8369701987210297e-16,
+        "y_meters": 3.0,
         "type": "house",
         "HouseID": 3,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": false
+    },
+    {
+        "id": "e5e57b40c5204",
+        "next_nodes": [
+            "4be4d2ef34594"
+        ],
+        "prev_nodes": [
+            "ab37f949347a4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 0.7803612880645133,
+        "y_meters": 3.9231411216129217,
+        "type": "house",
+        "HouseID": 4,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": true
+    },
+    {
+        "id": "bc741e398c144",
+        "next_nodes": [
+            "d438cbe4c8c04",
+            "ac20faf470da4"
+        ],
+        "prev_nodes": [
+            "ab37f949347a4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -0.7803612880645128,
+        "y_meters": 3.9231411216129217,
+        "type": "house",
+        "HouseID": 5,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": true
+    },
+    {
+        "id": "d438cbe4c8c04",
+        "next_nodes": [],
+        "prev_nodes": [
+            "bc741e398c144"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -0.49008570164780324,
+        "y_meters": 4.975923633360985,
+        "type": "house",
+        "HouseID": 6,
+        "voltage_data": [],
+        "predicted_phase": "A",
+        "solar": true
+    },
+    {
+        "id": "ac20faf470da4",
+        "next_nodes": [
+            "55058f6e24ca4"
+        ],
+        "prev_nodes": [
+            "bc741e398c144"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -1.4514233862723107,
+        "y_meters": 4.784701678661045,
+        "type": "house",
+        "HouseID": 7,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": false
+    },
+    {
+        "id": "55058f6e24ca4",
+        "next_nodes": [
+            "fbfb4eed96164",
+            "046d706337c14"
+        ],
+        "prev_nodes": [
+            "ac20faf470da4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -1.741708063526773,
+        "y_meters": 5.741642014393253,
+        "type": "house",
+        "HouseID": 8,
         "voltage_data": [],
         "predicted_phase": "A",
         "solar": false
     },
     {
-        "id": "7ce374cc04814",
+        "id": "fbfb4eed96164",
         "next_nodes": [
-            "bdf1fb0535fa4"
+            "9cdf9e4a22294"
         ],
         "prev_nodes": [
-            "17e4e63ab2514"
+            "55058f6e24ca4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 1.8122103937140768,
-        "y_meters": -4.6743030958355885,
-        "type": "house",
-        "HouseID": 4,
-        "voltage_data": [],
-        "predicted_phase": "C",
-        "solar": true
-    },
-    {
-        "id": "bdf1fb0535fa4",
-        "next_nodes": [
-            "a76547417f584"
-        ],
-        "prev_nodes": [
-            "7ce374cc04814"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 4.774691783827976,
-        "y_meters": 3.297318894238604,
-        "type": "house",
-        "HouseID": 5,
-        "voltage_data": [],
-        "predicted_phase": "C",
-        "solar": false
-    },
-    {
-        "id": "a76547417f584",
-        "next_nodes": [
-            "adb3096894134"
-        ],
-        "prev_nodes": [
-            "bdf1fb0535fa4"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 3.709998715503179,
-        "y_meters": -0.13472540974820735,
-        "type": "house",
-        "HouseID": 6,
-        "voltage_data": [],
-        "predicted_phase": "B",
-        "solar": true
-    },
-    {
-        "id": "adb3096894134",
-        "next_nodes": [
-            "b7c923d4517a4"
-        ],
-        "prev_nodes": [
-            "a76547417f584"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 0.8490554146878821,
-        "y_meters": -1.9657325893343955,
-        "type": "house",
-        "HouseID": 7,
-        "voltage_data": [],
-        "predicted_phase": "B",
-        "solar": false
-    },
-    {
-        "id": "385dc32a000f4",
-        "next_nodes": [
-            "9ef338b2bfcd4",
-            "d3fb1bdd40554"
-        ],
-        "prev_nodes": [
-            "17e4e63ab2514"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -2.6470636620597032,
-        "y_meters": -3.1886788265702384,
+        "x_meters": -1.7008612593228472,
+        "y_meters": 6.790218772361808,
         "type": "house",
         "HouseID": 9,
         "voltage_data": [],
@@ -149,50 +166,50 @@
         "solar": true
     },
     {
-        "id": "9ef338b2bfcd4",
+        "id": "9cdf9e4a22294",
         "next_nodes": [
-            "fdce04a6c1b14"
+            "9f2a6bc4d35f4"
         ],
         "prev_nodes": [
-            "385dc32a000f4"
+            "fbfb4eed96164"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.9803354674612494,
-        "y_meters": -4.982722922415088,
+        "x_meters": -1.943841439226111,
+        "y_meters": 7.760250025556352,
         "type": "house",
         "HouseID": 10,
         "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
+        "predicted_phase": "B",
+        "solar": true
     },
     {
-        "id": "fdce04a6c1b14",
+        "id": "9f2a6bc4d35f4",
         "next_nodes": [
-            "388e3e18d5134"
+            "46e0d2b910a54"
         ],
         "prev_nodes": [
-            "9ef338b2bfcd4"
+            "9cdf9e4a22294"
         ],
         "next_node_distances_m": {},
-        "x_meters": -4.714681619056991,
-        "y_meters": -0.2955600912642131,
+        "x_meters": -2.186821619129375,
+        "y_meters": 8.730281278750896,
         "type": "house",
         "HouseID": 11,
         "voltage_data": [],
-        "predicted_phase": "B",
-        "solar": false
+        "predicted_phase": "C",
+        "solar": true
     },
     {
-        "id": "388e3e18d5134",
+        "id": "46e0d2b910a54",
         "next_nodes": [
-            "cd3dc8851c144"
+            "d90633a42dc94"
         ],
         "prev_nodes": [
-            "fdce04a6c1b14"
+            "9f2a6bc4d35f4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.8746428147053855,
-        "y_meters": 1.8229033627365645,
+        "x_meters": -2.4298017990326386,
+        "y_meters": 9.700312531945439,
         "type": "house",
         "HouseID": 12,
         "voltage_data": [],
@@ -200,86 +217,85 @@
         "solar": false
     },
     {
-        "id": "cd3dc8851c144",
+        "id": "d90633a42dc94",
         "next_nodes": [
-            "79aaf25ea06f4"
+            "fcb8f1a238bb4"
         ],
         "prev_nodes": [
-            "388e3e18d5134"
+            "46e0d2b910a54"
         ],
         "next_node_distances_m": {},
-        "x_meters": -3.090472185600701,
-        "y_meters": 4.964564789996507,
+        "x_meters": -2.6727819789359026,
+        "y_meters": 10.670343785139984,
         "type": "house",
         "HouseID": 13,
         "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
+        "predicted_phase": "B",
+        "solar": true
     },
     {
-        "id": "79aaf25ea06f4",
-        "next_nodes": [
-            "92f9b30064b54",
-            "a9e3fcfd1ba84"
-        ],
+        "id": "fcb8f1a238bb4",
+        "next_nodes": [],
         "prev_nodes": [
-            "cd3dc8851c144"
+            "d90633a42dc94"
         ],
         "next_node_distances_m": {},
-        "x_meters": -3.170660577790252,
-        "y_meters": 1.4336077883061709,
+        "x_meters": -2.9157621588391667,
+        "y_meters": 11.640375038334527,
         "type": "house",
         "HouseID": 14,
         "voltage_data": [],
         "predicted_phase": "C",
-        "solar": true
+        "solar": false
     },
     {
-        "id": "92f9b30064b54",
+        "id": "593426d7fb754",
         "next_nodes": [
-            "dc3deb5277974"
+            "6272f4bc76854",
+            "9571a12249504"
         ],
         "prev_nodes": [
-            "79aaf25ea06f4"
+            "7fc0095ab17e4"
         ],
         "next_node_distances_m": {},
-        "x_meters": -4.66256781343805,
-        "y_meters": 4.647962942586718,
+        "x_meters": -1.8369701987210297e-16,
+        "y_meters": -1.0,
         "type": "house",
         "HouseID": 15,
         "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "A",
         "solar": true
     },
     {
-        "id": "dc3deb5277974",
+        "id": "6272f4bc76854",
         "next_nodes": [
-            "e398a8b899114",
-            "77055c7420314"
+            "3192b14f55964",
+            "05d64ff387914",
+            "a4e08622e7154"
         ],
         "prev_nodes": [
-            "92f9b30064b54"
+            "593426d7fb754"
         ],
         "next_node_distances_m": {},
-        "x_meters": 4.245640864713726,
-        "y_meters": 4.655918999322941,
+        "x_meters": -1.4142135623730954,
+        "y_meters": -1.414213562373095,
         "type": "house",
         "HouseID": 16,
         "voltage_data": [],
         "predicted_phase": "C",
-        "solar": true
+        "solar": false
     },
     {
-        "id": "e398a8b899114",
+        "id": "3192b14f55964",
         "next_nodes": [
-            "95156cc04b644"
+            "0f62f6102c304"
         ],
         "prev_nodes": [
-            "dc3deb5277974"
+            "6272f4bc76854"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.0336909888759838,
-        "y_meters": 0.5773935445264398,
+        "x_meters": -2.5980762113533165,
+        "y_meters": -1.4999999999999991,
         "type": "house",
         "HouseID": 17,
         "voltage_data": [],
@@ -287,271 +303,298 @@
         "solar": false
     },
     {
-        "id": "95156cc04b644",
+        "id": "0f62f6102c304",
         "next_nodes": [
-            "43adddb148224"
+            "47045c296f0f4"
         ],
         "prev_nodes": [
-            "e398a8b899114"
+            "3192b14f55964"
         ],
         "next_node_distances_m": {},
-        "x_meters": 3.7583104309418065,
-        "y_meters": -4.345109196634,
+        "x_meters": -3.4641016151377553,
+        "y_meters": -1.999999999999999,
         "type": "house",
         "HouseID": 18,
         "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "43adddb148224",
+        "id": "47045c296f0f4",
         "next_nodes": [
-            "a637f7029b754"
+            "c93e0227300b4"
         ],
         "prev_nodes": [
-            "95156cc04b644"
+            "0f62f6102c304"
         ],
         "next_node_distances_m": {},
-        "x_meters": -2.4585982138064146,
-        "y_meters": -3.1879046782582368,
+        "x_meters": -4.3301270189221945,
+        "y_meters": -2.4999999999999987,
         "type": "house",
         "HouseID": 19,
         "voltage_data": [],
         "predicted_phase": "B",
-        "solar": false
-    },
-    {
-        "id": "a637f7029b754",
-        "next_nodes": [
-            "8f879f937b634"
-        ],
-        "prev_nodes": [
-            "43adddb148224"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 4.978317402526724,
-        "y_meters": -3.122190344343294,
-        "type": "house",
-        "HouseID": 20,
-        "voltage_data": [],
-        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "8f879f937b634",
+        "id": "c93e0227300b4",
         "next_nodes": [
-            "537a130f17394"
+            "d4249514cf694"
         ],
         "prev_nodes": [
-            "a637f7029b754"
+            "47045c296f0f4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 3.2950680675341673,
-        "y_meters": -4.378371663912173,
+        "x_meters": -5.196152422706633,
+        "y_meters": -2.9999999999999982,
         "type": "house",
-        "HouseID": 21,
-        "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "537a130f17394",
-        "next_nodes": [
-            "548332f322b64"
-        ],
-        "prev_nodes": [
-            "8f879f937b634"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 3.735376656788027,
-        "y_meters": -4.802887498113276,
-        "type": "house",
-        "HouseID": 22,
+        "HouseID": 20,
         "voltage_data": [],
         "predicted_phase": "C",
         "solar": false
     },
     {
-        "id": "d3fb1bdd40554",
+        "id": "d4249514cf694",
         "next_nodes": [
-            "2cf4e64fb74f4"
+            "a8e6b81ae9e04"
         ],
         "prev_nodes": [
-            "385dc32a000f4"
+            "c93e0227300b4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.410590105068718,
-        "y_meters": 0.2355859688876123,
+        "x_meters": -6.062177826491071,
+        "y_meters": -3.4999999999999982,
+        "type": "house",
+        "HouseID": 21,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": false
+    },
+    {
+        "id": "a8e6b81ae9e04",
+        "next_nodes": [
+            "f2b90c20deaf4"
+        ],
+        "prev_nodes": [
+            "d4249514cf694"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -6.9282032302755105,
+        "y_meters": -3.999999999999998,
+        "type": "house",
+        "HouseID": 22,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": true
+    },
+    {
+        "id": "f2b90c20deaf4",
+        "next_nodes": [],
+        "prev_nodes": [
+            "a8e6b81ae9e04"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -7.79422863405995,
+        "y_meters": -4.499999999999997,
+        "type": "house",
+        "HouseID": 23,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": false
+    },
+    {
+        "id": "9571a12249504",
+        "next_nodes": [
+            "669380d897814"
+        ],
+        "prev_nodes": [
+            "593426d7fb754"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.4142135623730947,
+        "y_meters": -1.4142135623730954,
         "type": "house",
         "HouseID": 24,
         "voltage_data": [],
         "predicted_phase": "C",
-        "solar": true
+        "solar": false
     },
     {
-        "id": "2cf4e64fb74f4",
-        "next_nodes": [
-            "4917a5052f5f4"
-        ],
+        "id": "669380d897814",
+        "next_nodes": [],
         "prev_nodes": [
-            "d3fb1bdd40554"
+            "9571a12249504"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.52494842599706,
-        "y_meters": 4.093489921985672,
+        "x_meters": 2.121320343559642,
+        "y_meters": -2.121320343559643,
         "type": "house",
         "HouseID": 25,
         "voltage_data": [],
-        "predicted_phase": "A",
+        "predicted_phase": "C",
         "solar": true
     },
     {
-        "id": "4917a5052f5f4",
+        "id": "05d64ff387914",
         "next_nodes": [
-            "20e4c7b5f0c54"
+            "f9f2604dd8ab4"
         ],
         "prev_nodes": [
-            "2cf4e64fb74f4"
+            "6272f4bc76854"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.424542528497963,
-        "y_meters": 0.6326556336287856,
+        "x_meters": -2.121320343559643,
+        "y_meters": -2.1213203435596424,
         "type": "house",
         "HouseID": 26,
         "voltage_data": [],
-        "predicted_phase": "B",
-        "solar": false
-    },
-    {
-        "id": "20e4c7b5f0c54",
-        "next_nodes": [
-            "be3f2f79f7334"
-        ],
-        "prev_nodes": [
-            "4917a5052f5f4"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -2.22303822305265,
-        "y_meters": -4.337143235773898,
-        "type": "house",
-        "HouseID": 27,
-        "voltage_data": [],
         "predicted_phase": "C",
         "solar": true
     },
     {
-        "id": "be3f2f79f7334",
-        "next_nodes": [
-            "94a44a8b10684"
-        ],
+        "id": "f9f2604dd8ab4",
+        "next_nodes": [],
         "prev_nodes": [
-            "20e4c7b5f0c54"
+            "05d64ff387914"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.4017218744875706,
-        "y_meters": -4.849086894569185,
+        "x_meters": -2.8284271247461907,
+        "y_meters": -2.82842712474619,
         "type": "house",
-        "HouseID": 28,
+        "HouseID": 27,
         "voltage_data": [],
         "predicted_phase": "B",
         "solar": false
     },
     {
-        "id": "94a44a8b10684",
-        "next_nodes": [
-            "53d7e0ad79f24"
-        ],
+        "id": "a4e08622e7154",
+        "next_nodes": [],
         "prev_nodes": [
-            "be3f2f79f7334"
+            "6272f4bc76854"
         ],
         "next_node_distances_m": {},
-        "x_meters": -4.776130440324242,
-        "y_meters": -1.0970973424299202,
+        "x_meters": -1.5000000000000013,
+        "y_meters": -2.5980762113533156,
         "type": "house",
-        "HouseID": 29,
+        "HouseID": 28,
         "voltage_data": [],
-        "predicted_phase": "B",
-        "solar": true
+        "predicted_phase": "C",
+        "solar": false
     },
     {
-        "id": "53d7e0ad79f24",
+        "id": "4be4d2ef34594",
         "next_nodes": [
-            "0ec163f650c34"
+            "966547ac72bd4"
         ],
         "prev_nodes": [
-            "94a44a8b10684"
+            "e5e57b40c5204"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.472437941729261,
-        "y_meters": 2.456407238175613,
+        "x_meters": 0.9754516100806416,
+        "y_meters": 4.903926402016152,
         "type": "house",
-        "HouseID": 30,
+        "HouseID": 29,
         "voltage_data": [],
         "predicted_phase": "A",
         "solar": false
     },
     {
-        "id": "0ec163f650c34",
+        "id": "966547ac72bd4",
         "next_nodes": [
-            "11ae3d02c1e64"
+            "bde4a29332fc4"
         ],
         "prev_nodes": [
-            "53d7e0ad79f24"
+            "4be4d2ef34594"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.855025270249989,
-        "y_meters": -3.6729058623415813,
+        "x_meters": 1.17054193209677,
+        "y_meters": 5.884711682419383,
         "type": "house",
-        "HouseID": 31,
+        "HouseID": 30,
         "voltage_data": [],
-        "predicted_phase": "C",
-        "solar": true
-    },
-    {
-        "id": "11ae3d02c1e64",
-        "next_nodes": [
-            "5b29e305bb104"
-        ],
-        "prev_nodes": [
-            "0ec163f650c34"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 3.4635954584572417,
-        "y_meters": -0.7021618851384943,
-        "type": "house",
-        "HouseID": 32,
-        "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "B",
         "solar": false
     },
     {
-        "id": "5b29e305bb104",
+        "id": "bde4a29332fc4",
         "next_nodes": [
-            "0d351e700dbc4"
+            "60537cf26a3f4"
         ],
         "prev_nodes": [
-            "11ae3d02c1e64"
+            "966547ac72bd4"
         ],
         "next_node_distances_m": {},
-        "x_meters": -3.9411803321784014,
-        "y_meters": 3.8158192177406693,
+        "x_meters": 1.3656322541128982,
+        "y_meters": 6.865496962822613,
+        "type": "house",
+        "HouseID": 31,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": false
+    },
+    {
+        "id": "60537cf26a3f4",
+        "next_nodes": [
+            "40ff368601bd4"
+        ],
+        "prev_nodes": [
+            "bde4a29332fc4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.5607225761290267,
+        "y_meters": 7.8462822432258434,
+        "type": "house",
+        "HouseID": 32,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": true
+    },
+    {
+        "id": "40ff368601bd4",
+        "next_nodes": [
+            "64ee1a7b61384"
+        ],
+        "prev_nodes": [
+            "60537cf26a3f4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.755812898145155,
+        "y_meters": 8.827067523629074,
         "type": "house",
         "HouseID": 33,
         "voltage_data": [],
         "predicted_phase": "A",
+        "solar": false
+    },
+    {
+        "id": "64ee1a7b61384",
+        "next_nodes": [
+            "ab667e0f42e94",
+            "302fbc40f88d4"
+        ],
+        "prev_nodes": [
+            "40ff368601bd4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.9509032201612833,
+        "y_meters": 9.807852804032304,
+        "type": "house",
+        "HouseID": 34,
+        "voltage_data": [],
+        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "a9e3fcfd1ba84",
+        "id": "ab667e0f42e94",
         "next_nodes": [
-            "a7ac18603dcb4"
+            "b64605874ec44"
         ],
         "prev_nodes": [
-            "79aaf25ea06f4"
+            "64ee1a7b61384"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.9015439986605731,
-        "y_meters": 1.9535865094074367,
+        "x_meters": 3.1931314497990857,
+        "y_meters": 10.526343693054299,
         "type": "house",
         "HouseID": 35,
         "voltage_data": [],
@@ -559,68 +602,85 @@
         "solar": true
     },
     {
-        "id": "a7ac18603dcb4",
+        "id": "b64605874ec44",
         "next_nodes": [
-            "fefc39a3e4554"
+            "dc9d48e0265c4"
         ],
         "prev_nodes": [
-            "a9e3fcfd1ba84"
+            "ab667e0f42e94"
         ],
         "next_node_distances_m": {},
-        "x_meters": 4.56671604327509,
-        "y_meters": 0.9431237945287974,
+        "x_meters": 3.483416127053548,
+        "y_meters": 11.483284028786507,
         "type": "house",
         "HouseID": 36,
-        "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "fefc39a3e4554",
-        "next_nodes": [
-            "ca270ae6f3c34"
-        ],
-        "prev_nodes": [
-            "a7ac18603dcb4"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -4.267578365847742,
-        "y_meters": -1.0017980950420036,
-        "type": "house",
-        "HouseID": 37,
-        "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "ca270ae6f3c34",
-        "next_nodes": [
-            "b0c9a98c925b4",
-            "a19259c48af04"
-        ],
-        "prev_nodes": [
-            "fefc39a3e4554"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -1.2369368307138906,
-        "y_meters": -1.2939485389599694,
-        "type": "house",
-        "HouseID": 38,
         "voltage_data": [],
         "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "a19259c48af04",
+        "id": "dc9d48e0265c4",
         "next_nodes": [
-            "1e3418483f6f4"
+            "c285056b67e94"
         ],
         "prev_nodes": [
-            "ca270ae6f3c34"
+            "b64605874ec44"
         ],
         "next_node_distances_m": {},
-        "x_meters": 3.71193531792785,
-        "y_meters": 0.1665080774677481,
+        "x_meters": 3.7737008043080102,
+        "y_meters": 12.440224364518716,
+        "type": "house",
+        "HouseID": 37,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": true
+    },
+    {
+        "id": "c285056b67e94",
+        "next_nodes": [
+            "2a709e1d711a4"
+        ],
+        "prev_nodes": [
+            "dc9d48e0265c4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 4.063985481562472,
+        "y_meters": 13.397164700250926,
+        "type": "house",
+        "HouseID": 38,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": true
+    },
+    {
+        "id": "2a709e1d711a4",
+        "next_nodes": [
+            "5bf69e49fb2e4",
+            "6742823093834"
+        ],
+        "prev_nodes": [
+            "c285056b67e94"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 4.354270158816935,
+        "y_meters": 14.354105035983133,
+        "type": "house",
+        "HouseID": 39,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": true
+    },
+    {
+        "id": "5bf69e49fb2e4",
+        "next_nodes": [
+            "d7a7ce2b5d724"
+        ],
+        "prev_nodes": [
+            "2a709e1d711a4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 5.390237654275521,
+        "y_meters": 15.064705042928333,
         "type": "house",
         "HouseID": 40,
         "voltage_data": [],
@@ -628,309 +688,335 @@
         "solar": false
     },
     {
-        "id": "1e3418483f6f4",
-        "next_nodes": [
-            "d07f302c843a4"
-        ],
+        "id": "d7a7ce2b5d724",
+        "next_nodes": [],
         "prev_nodes": [
-            "a19259c48af04"
+            "5bf69e49fb2e4"
         ],
         "next_node_distances_m": {},
-        "x_meters": -4.393932926913918,
-        "y_meters": -3.8130576071913036,
+        "x_meters": 5.727127507667741,
+        "y_meters": 16.006249108111355,
         "type": "house",
         "HouseID": 41,
         "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": true
+        "predicted_phase": "C",
+        "solar": false
     },
     {
-        "id": "d07f302c843a4",
+        "id": "6742823093834",
         "next_nodes": [
-            "215381a68f3e4"
+            "cab2d54d61464"
         ],
         "prev_nodes": [
-            "1e3418483f6f4"
+            "2a709e1d711a4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 3.647571252317354,
-        "y_meters": 4.073263411479731,
+        "x_meters": 3.8876828784522237,
+        "y_meters": 15.520500051112704,
         "type": "house",
         "HouseID": 42,
         "voltage_data": [],
-        "predicted_phase": "A",
+        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "215381a68f3e4",
+        "id": "cab2d54d61464",
         "next_nodes": [
-            "ca7dfcb2f5894"
+            "cb6baa163b8c4"
         ],
         "prev_nodes": [
-            "d07f302c843a4"
+            "6742823093834"
         ],
         "next_node_distances_m": {},
-        "x_meters": 0.3919322571410202,
-        "y_meters": 3.398613136767052,
+        "x_meters": 4.130663058355488,
+        "y_meters": 16.490531304307247,
         "type": "house",
         "HouseID": 43,
         "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "77055c7420314",
-        "next_nodes": [
-            "91038fa9b0e24"
-        ],
-        "prev_nodes": [
-            "dc3deb5277974"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 2.4856091359893453,
-        "y_meters": -0.23027457588053668,
-        "type": "house",
-        "HouseID": 45,
-        "voltage_data": [],
-        "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "91038fa9b0e24",
-        "next_nodes": [
-            "553d298816fa4"
-        ],
-        "prev_nodes": [
-            "77055c7420314"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -4.995413518720824,
-        "y_meters": 2.6154596486780433,
-        "type": "house",
-        "HouseID": 46,
-        "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "B",
         "solar": true
     },
     {
-        "id": "553d298816fa4",
+        "id": "cb6baa163b8c4",
         "next_nodes": [
-            "41058d2907334"
+            "773fc8ad23544"
         ],
         "prev_nodes": [
-            "91038fa9b0e24"
+            "cab2d54d61464"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.908181532290266,
-        "y_meters": 1.2600357222004552,
+        "x_meters": 4.373643238258752,
+        "y_meters": 17.46056255750179,
         "type": "house",
-        "HouseID": 47,
+        "HouseID": 44,
         "voltage_data": [],
         "predicted_phase": "A",
+        "solar": true
+    },
+    {
+        "id": "773fc8ad23544",
+        "next_nodes": [
+            "53cb037257a24"
+        ],
+        "prev_nodes": [
+            "cb6baa163b8c4"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 4.616623418162016,
+        "y_meters": 18.430593810696337,
+        "type": "house",
+        "HouseID": 45,
+        "voltage_data": [],
+        "predicted_phase": "C",
         "solar": false
     },
     {
-        "id": "41058d2907334",
+        "id": "53cb037257a24",
         "next_nodes": [
-            "6e3d0655b3d84"
+            "06bce290a7284"
         ],
         "prev_nodes": [
-            "553d298816fa4"
+            "773fc8ad23544"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.312616261687566,
-        "y_meters": 2.751394281576794,
+        "x_meters": 4.85960359806528,
+        "y_meters": 19.400625063890878,
+        "type": "house",
+        "HouseID": 46,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": false
+    },
+    {
+        "id": "06bce290a7284",
+        "next_nodes": [
+            "f3cf63aa457f4"
+        ],
+        "prev_nodes": [
+            "53cb037257a24"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 5.102583777968544,
+        "y_meters": 20.370656317085423,
+        "type": "house",
+        "HouseID": 47,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": false
+    },
+    {
+        "id": "f3cf63aa457f4",
+        "next_nodes": [
+            "cb7216247e9d4"
+        ],
+        "prev_nodes": [
+            "06bce290a7284"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 5.345563957871808,
+        "y_meters": 21.340687570279968,
         "type": "house",
         "HouseID": 48,
         "voltage_data": [],
         "predicted_phase": "C",
-        "solar": false
-    },
-    {
-        "id": "6e3d0655b3d84",
-        "next_nodes": [
-            "73a3a080bc874"
-        ],
-        "prev_nodes": [
-            "41058d2907334"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -1.5440520273635538,
-        "y_meters": -4.857006026435711,
-        "type": "house",
-        "HouseID": 49,
-        "voltage_data": [],
-        "predicted_phase": "A",
         "solar": true
     },
     {
-        "id": "73a3a080bc874",
+        "id": "cb7216247e9d4",
         "next_nodes": [
-            "11df4908dc024"
+            "3a6a9947fe6f4"
         ],
         "prev_nodes": [
-            "6e3d0655b3d84"
+            "f3cf63aa457f4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 1.0050759996713845,
-        "y_meters": -3.01286295654314,
+        "x_meters": 5.588544137775072,
+        "y_meters": 22.310718823474513,
         "type": "house",
-        "HouseID": 50,
+        "HouseID": 49,
         "voltage_data": [],
         "predicted_phase": "B",
         "solar": false
     },
     {
-        "id": "11df4908dc024",
-        "next_nodes": [
-            "627dc26911cf4"
-        ],
+        "id": "3a6a9947fe6f4",
+        "next_nodes": [],
         "prev_nodes": [
-            "73a3a080bc874"
+            "cb7216247e9d4"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.0454694134894957,
-        "y_meters": 3.3089919189406167,
+        "x_meters": 5.831524317678335,
+        "y_meters": 23.280750076669054,
+        "type": "house",
+        "HouseID": 50,
+        "voltage_data": [],
+        "predicted_phase": "C",
+        "solar": true
+    },
+    {
+        "id": "302fbc40f88d4",
+        "next_nodes": [
+            "78f43cdb20bb4"
+        ],
+        "prev_nodes": [
+            "64ee1a7b61384"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.0781885436251684,
+        "y_meters": 10.947031993394164,
         "type": "house",
         "HouseID": 51,
         "voltage_data": [],
         "predicted_phase": "A",
-        "solar": true
+        "solar": false
     },
     {
-        "id": "627dc26911cf4",
+        "id": "78f43cdb20bb4",
         "next_nodes": [
-            "5d3412fbadf94"
+            "dcc5f37b7a004"
         ],
         "prev_nodes": [
-            "11df4908dc024"
+            "302fbc40f88d4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.7340607734122937,
-        "y_meters": 1.510952689896257,
+        "x_meters": 1.1762056839547292,
+        "y_meters": 11.942216720066362,
         "type": "house",
         "HouseID": 52,
         "voltage_data": [],
         "predicted_phase": "A",
-        "solar": false
-    },
-    {
-        "id": "5d3412fbadf94",
-        "next_nodes": [
-            "35298ca2d6d84"
-        ],
-        "prev_nodes": [
-            "627dc26911cf4"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": 1.105633363186377,
-        "y_meters": 4.463532465812904,
-        "type": "house",
-        "HouseID": 53,
-        "voltage_data": [],
-        "predicted_phase": "C",
-        "solar": false
-    },
-    {
-        "id": "35298ca2d6d84",
-        "next_nodes": [
-            "efebaa5773144"
-        ],
-        "prev_nodes": [
-            "5d3412fbadf94"
-        ],
-        "next_node_distances_m": {},
-        "x_meters": -3.4070156663071396,
-        "y_meters": 3.3408641661069858,
-        "type": "house",
-        "HouseID": 54,
-        "voltage_data": [],
-        "predicted_phase": "C",
         "solar": true
     },
     {
-        "id": "efebaa5773144",
+        "id": "dcc5f37b7a004",
         "next_nodes": [
-            "011d6ae613434"
+            "a47b22b0c5214"
         ],
         "prev_nodes": [
-            "35298ca2d6d84"
+            "78f43cdb20bb4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 1.2315009508799504,
-        "y_meters": -2.631995189814136,
+        "x_meters": 1.2742228242842901,
+        "y_meters": 12.937401446738559,
         "type": "house",
-        "HouseID": 55,
+        "HouseID": 53,
         "voltage_data": [],
         "predicted_phase": "A",
+        "solar": true
+    },
+    {
+        "id": "a47b22b0c5214",
+        "next_nodes": [
+            "ef43c770f3334"
+        ],
+        "prev_nodes": [
+            "dcc5f37b7a004"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.3722399646138508,
+        "y_meters": 13.932586173410755,
+        "type": "house",
+        "HouseID": 54,
+        "voltage_data": [],
+        "predicted_phase": "B",
         "solar": false
     },
     {
-        "id": "011d6ae613434",
+        "id": "ef43c770f3334",
         "next_nodes": [
-            "e7df0dab640a4"
+            "64723556c4d14"
         ],
         "prev_nodes": [
-            "efebaa5773144"
+            "a47b22b0c5214"
         ],
         "next_node_distances_m": {},
-        "x_meters": 2.013706284153635,
-        "y_meters": -3.45020331010811,
+        "x_meters": 1.4702571049434114,
+        "y_meters": 14.927770900082953,
+        "type": "house",
+        "HouseID": 55,
+        "voltage_data": [],
+        "predicted_phase": "B",
+        "solar": true
+    },
+    {
+        "id": "64723556c4d14",
+        "next_nodes": [],
+        "prev_nodes": [
+            "ef43c770f3334"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": 1.5682742452729723,
+        "y_meters": 15.922955626755149,
         "type": "house",
         "HouseID": 56,
         "voltage_data": [],
         "predicted_phase": "A",
-        "solar": false
+        "solar": true
     },
     {
-        "id": "e7df0dab640a4",
+        "id": "046d706337c14",
         "next_nodes": [
-            "4d4dd18063914"
+            "8cd0f9e0ca024"
         ],
         "prev_nodes": [
-            "011d6ae613434"
+            "55058f6e24ca4"
         ],
         "next_node_distances_m": {},
-        "x_meters": 1.5795308267801156,
-        "y_meters": -3.1841484916368,
+        "x_meters": -2.3582289737455397,
+        "y_meters": 6.590808456281145,
         "type": "house",
         "HouseID": 57,
         "voltage_data": [],
-        "predicted_phase": "C",
+        "predicted_phase": "A",
         "solar": false
     },
     {
-        "id": "4d4dd18063914",
+        "id": "8cd0f9e0ca024",
         "next_nodes": [
-            "b894be74f0144"
+            "e08dd23db0f94"
         ],
         "prev_nodes": [
-            "e7df0dab640a4"
+            "046d706337c14"
         ],
         "next_node_distances_m": {},
-        "x_meters": -4.04162658097348,
-        "y_meters": -4.020907110278627,
+        "x_meters": -2.6951188271377595,
+        "y_meters": 7.5323525214641665,
         "type": "house",
         "HouseID": 58,
         "voltage_data": [],
+        "predicted_phase": "A",
+        "solar": true
+    },
+    {
+        "id": "e08dd23db0f94",
+        "next_nodes": [
+            "e77ff177f8884"
+        ],
+        "prev_nodes": [
+            "8cd0f9e0ca024"
+        ],
+        "next_node_distances_m": {},
+        "x_meters": -3.0320086805299793,
+        "y_meters": 8.473896586647188,
+        "type": "house",
+        "HouseID": 59,
+        "voltage_data": [],
         "predicted_phase": "C",
         "solar": false
     },
     {
-        "id": "b894be74f0144",
-        "next_nodes": [
-            "6d07a460ebec4"
-        ],
+        "id": "e77ff177f8884",
+        "next_nodes": [],
         "prev_nodes": [
-            "4d4dd18063914"
+            "e08dd23db0f94"
         ],
         "next_node_distances_m": {},
-        "x_meters": -1.1051555339948225,
-        "y_meters": 3.735636435634781,
+        "x_meters": -3.3688985339221995,
+        "y_meters": 9.415440651830208,
         "type": "house",
-        "HouseID": 59,
+        "HouseID": 60,
         "voltage_data": [],
-        "predicted_phase": "B",
+        "predicted_phase": "A",
         "solar": false
     }
 ]
